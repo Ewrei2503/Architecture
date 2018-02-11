@@ -1,4 +1,4 @@
-package com.mycompany.whooper.config; 
+package com.mycompany.architecture.config; 
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.context.annotation.Configuration;

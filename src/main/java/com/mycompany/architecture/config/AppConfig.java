@@ -1,4 +1,4 @@
-package com.mycompany.whooper.config;
+package com.mycompany.architecture.config;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;

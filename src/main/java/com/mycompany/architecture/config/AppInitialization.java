@@ -1,4 +1,4 @@
-package com.mycompany.whooper.config;
+package com.mycompany.architecture.config;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
