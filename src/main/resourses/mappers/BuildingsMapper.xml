@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE mapper 
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd"> 
+
+<mapper namespace="com.mycompany.architecture.mappers" > 
+
+    
+    
+<resultMap id="Buildings" type="com.mycompany.testwebproject.dao.type.Buildings"> 
+<id property="id" column="id"/> 
+<result property="name" column="name"/>
+<result property="civil" column="civil"/>
+<result property="enterrise" column="enterprise"/>
+<result property="city" column="city"/>
+<result property="street" column="street"/>
+</resultMap> 
+
+
+
+<select id="getBuildingsById" parameterType="java.lang.Long" resultMap="Buildings"> 
+    SELECT * FROM Buildings WHERE id=#{id} 
+</select>
+<insert id="insertBuildings" parameterType="com.mycompany.mavenproject3.dao.type.Buildings"> 
+    INSERT INTO Buildings(id, name, civil, enterprise, city, street) VALUES (#{id}, #{name}, #(civil), #(enterprise), #(city), #(street)) 
+</insert> 
+
+
+<update id="update" parameterType="com.mycompany.mavenproject3.dao.type.Buildings" resultMap="Buildings"> 
+    UPDATE * SET name=#{name}, civil=#{civil}, enterprise=#{enterprise}, city=#{city}, street=#{street} WHERE id=#{id} 
+</update> 
+
+
+<delete id="deleteBuildingsById" parameterType="com.mycompany.mavenproject3.dao.type.Buildings" resultMap="Buildings"> 
+    DELETE * FROM Buildings WHERE id=#{id} 
+</delete>
+
+</mapper>

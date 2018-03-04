@@ -7,18 +7,27 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 <mapper namespace="com.mycompany.architecture.mappers" > 
 
 <resultMap id="City" type="com.mycompany.testwebproject.dao.type.City"> 
-<id property="id" column="id"/> 
-<result property="name" column="name"/>
-<result property="country" column="country"/> 
+    <id property="id" column="id"/> 
+    <result property="name" column="name"/> 
 </resultMap> 
 
-<select id="get" resultMap="testResult"> 
-SELECT 
-a.id, 
-a.testStr 
-FROM 
-test AS a; 
-</select> 
+<select id="getCityById" parameterType="java.lang.Long" resultMap="testResult"> 
+    SELECT * FROM City where id#{id}; 
+</select>
 
+  
+<insert id="insertCity" parameterType="com.mycompany.mavenproject3.dao.type.City"> 
+    INSERT INTO City(id, name) VALUES (#{id}, #{name}) 
+</insert> 
+
+
+<update id="update" parameterType="com.mycompany.mavenproject3.dao.type.City" resultMap="City"> 
+    UPDATE * SET name=#{name} WHERE id=#{id} 
+</update> 
+
+
+<delete id="deleteCityById" parameterType="com.mycompany.mavenproject3.dao.type.City" resultMap="City"> 
+    DELETE * FROM City WHERE id=#{id} 
+</delete>
 
 </mapper>

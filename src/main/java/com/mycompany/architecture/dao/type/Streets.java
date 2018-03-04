@@ -2,7 +2,7 @@ package com.mycompany.architecture.dao.type;
 public class Streets {
     private long id;
     private String name;
-    private String gps;
+    private long city;
 
     public long getId() {
         return id;
@@ -20,12 +20,12 @@ public class Streets {
         this.name = name;
     }
 
-    public String getGps() {
-        return gps;
+    public long getCity() {
+        return city;
     }
 
-    public void setGps(String gps) {
-        this.gps = gps;
+    public void setCity(long city) {
+        this.city = city;
     }
     
     

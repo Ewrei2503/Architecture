@@ -1,8 +1,9 @@
-D:\Documents\NetBeansProjects\Architecture\src\main\java\com\mycompany\architecture\dao\type\streets.java
+D:\Documents\NetBeansProjects\Architecture\src\main\java\com\mycompany\architecture\dao\type\Streets.java
 D:\Documents\NetBeansProjects\Architecture\src\main\java\com\mycompany\architecture\config\DataConfig.java
 D:\Documents\NetBeansProjects\Architecture\src\main\java\com\mycompany\architecture\config\AppInitialization.java
-D:\Documents\NetBeansProjects\Architecture\src\main\java\com\mycompany\architecture\dao\type\buildings.java
+D:\Documents\NetBeansProjects\Architecture\src\main\java\com\mycompany\architecture\dao\type\Buildings.java
+D:\Documents\NetBeansProjects\Architecture\src\main\java\com\mycompany\architecture\mappers\BuildingsMapper.java
 D:\Documents\NetBeansProjects\Architecture\src\main\java\com\mycompany\architecture\config\AppConfig.java
-D:\Documents\NetBeansProjects\Architecture\src\main\java\com\mycompany\architecture\dao\type\parts.java
-D:\Documents\NetBeansProjects\Architecture\src\main\java\com\mycompany\architecture\dao\type\city.java
-D:\Documents\NetBeansProjects\Architecture\src\main\java\com\mycompany\architecture\dao\type\village.java
+D:\Documents\NetBeansProjects\Architecture\src\main\java\com\mycompany\architecture\mappers\CityMapper.java
+D:\Documents\NetBeansProjects\Architecture\src\main\java\com\mycompany\architecture\dao\type\City.java
+D:\Documents\NetBeansProjects\Architecture\src\main\java\com\mycompany\architecture\mappers\StreetsMapper.java

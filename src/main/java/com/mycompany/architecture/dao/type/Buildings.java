@@ -3,9 +3,8 @@ public class Buildings {
     private long id;
     private boolean civil;
     private boolean enterprise;
-    private String gps;
-    private String gpsAdress;
-    private String Adress;
+    private long id_city;
+    private long street;
 
     public long getId() {
         return id;
@@ -31,30 +30,19 @@ public class Buildings {
         this.enterprise = enterprise;
     }
 
-    public String getGps() {
-        return gps;
+    public long getId_city() {
+        return id_city;
     }
 
-    public void setGps(String gps) {
-        this.gps = gps;
+    public void setIdsity(long id_city) {
+        this.id_city = id_city;
     }
 
-    public String getGpsAdress() {
-        return gpsAdress;
+    public long getStreet() {
+        return street;
     }
 
-    public void setGpsAdress(String gpsAdress) {
-        this.gpsAdress = gpsAdress;
-    }
-
-    public String getAdress() {
-        return Adress;
-    }
-
-    public void setAdress(String Adress) {
-        this.Adress = Adress;
-    }
-    
-    
-    
+    public void setStreet(long street) {
+        this.street = street;
+    }   
 }
