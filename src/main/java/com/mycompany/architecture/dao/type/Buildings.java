@@ -34,7 +34,7 @@ public class Buildings {
         return id_city;
     }
 
-    public void setIdsity(long id_city) {
+    public void setIdCity(long id_city) {
         this.id_city = id_city;
     }
 

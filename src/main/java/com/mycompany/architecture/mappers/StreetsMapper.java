@@ -4,14 +4,19 @@ import com.mycompany.architecture.dao.type.Streets;
 import java.util.List;
 
 public interface StreetsMapper {
+    
+    
     public Streets getStreetsById(Long id); 
 
 
-public void update(Streets street); 
+    public void update(Streets street);
+    
+    
+    public void insert(Streets street);
 
 
-public void deleteIdByStreets(Long id); 
+    public void deleteIdByStreets(Long id); 
 
 
-public List<Streets> getAll();
+    public List<Streets> getAll();
 }

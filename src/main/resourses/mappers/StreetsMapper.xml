@@ -21,6 +21,11 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 </select>
 
 
+<select id="getAll" resultMap="getAll"> 
+    SELECT a.id, a.name, a.city FROM Streets AS a 
+</select>
+
+
 <insert id="insertStreets" parameterType="com.mycompany.mavenproject3.dao.type.Streets"> 
     INSERT INTO Streets(id, name, city) VALUES (#{id}, #{name},#(city)) 
 </insert> 

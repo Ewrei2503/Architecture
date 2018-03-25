@@ -22,6 +22,13 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 <select id="getBuildingsById" parameterType="java.lang.Long" resultMap="Buildings"> 
     SELECT * FROM Buildings WHERE id=#{id} 
 </select>
+
+
+<select id="getAll" resultMap="getAll"> 
+    SELECT a.id, a.name, a.civil, a.enterprise, a.city, a.street FROM Buildings AS a 
+</select>
+
+
 <insert id="insertBuildings" parameterType="com.mycompany.mavenproject3.dao.type.Buildings"> 
     INSERT INTO Buildings(id, name, civil, enterprise, city, street) VALUES (#{id}, #{name}, #(civil), #(enterprise), #(city), #(street)) 
 </insert> 
